@@ -37,3 +37,57 @@ const fs = require("fs/promises")
 
 
 
+// async function rename(){
+//     try{
+//         await fs.rename("/workspaces/node-js-fifth-sem/01_Basics/basic.txt","hello.txt")
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+// }
+// rename()
+
+// async function watch(){
+//     try{
+//     const result = fs.watch("/workspaces/node-js-fifth-sem/01_Basics/hello.txt")
+//     for await (let event of result){
+//         console.log(event)
+//     }
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+// }
+// watch()
+
+// ---- Directories ---- //
+
+// async function makeDir(){
+//     try{ 
+//         await fs.mkdir("newDir")
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+// }
+// makeDir()
+
+// async function remDir(){
+//     try{
+//         await fs.rmdir("/workspaces/node-js-fifth-sem/newDir")
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+// }
+
+async function readDir(){
+    try{
+        const data = await fs.readdir("/workspaces/node-js-fifth-sem/newDir")
+        console.log(data)
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+readDir()
