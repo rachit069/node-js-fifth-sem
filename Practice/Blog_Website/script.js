@@ -19,6 +19,11 @@ const server = http.createServer((request,response)=>{
         const read = fs.createReadStream("/workspaces/node-js-fifth-sem/Practice/Blog_Website/style.css")
         read.pipe(response)
         }
+    else if(url=="/register"){
+        response.writeHead(200,{"Content-type":"text/html"})
+        const read = fs.createReadStream("/workspaces/node-js-fifth-sem/Practice/Blog_Website/form.html")
+        read.pipe(response)
+    }
     else{
         response.writeHead(200,{"Content-type":"text/html"})
     const read = fs.createReadStream("/workspaces/node-js-fifth-sem/Practice/Blog_Website/error.html")
