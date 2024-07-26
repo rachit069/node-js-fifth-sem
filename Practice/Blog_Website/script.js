@@ -25,6 +25,15 @@ const server = http.createServer((request,response)=>{
         read.pipe(response)
     }
     else if(url=="/userRegistered"){
+        let body = [];
+        request
+          .on('data', chunk => {
+            body.push(chunk);
+          })
+          .on('end', ()=>{
+            body = Buffer.concat(body).toString();
+            console.log(body)
+          })
         response.end("Registered Successfully..Laptop bnd kro")
     }
     else{
