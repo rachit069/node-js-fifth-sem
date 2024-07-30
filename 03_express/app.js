@@ -3,7 +3,7 @@ const app = express()
 const path = require("path")
 app.use("/Public/",express.static("Public"))
 // app.use("/Public",express)
-// app.use(express.urlencoded((extended:true)))
+app.use(express.urlencoded({extended:true}))
 
 app.get("/Public/",(req,res)=>{
     const obj = {
