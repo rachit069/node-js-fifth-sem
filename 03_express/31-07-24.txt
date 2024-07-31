@@ -1,0 +1,5 @@
+get : no payload rqd
+post : payload rqd
+put : complete payload rqd
+patch : payload rqd
+delete : id or payload rqd
