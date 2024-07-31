@@ -1,0 +1,3 @@
+1722413554925 from POST /user-registered with data: {"name":"gjg","email":"hgdg@gmail.com","phone":"7834"}
+1722413808914 from POST /user-registered with data: {"name":"wergwr","email":"t4gerg@gmail.com","phone":"1234345"}
+1722413858044 from POST /user-registered with data: {"name":"rachit","email":"rachit694.be22@chitkara.edu.in","phone":"7018100068"}

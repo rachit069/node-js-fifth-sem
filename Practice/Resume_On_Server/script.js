@@ -6,12 +6,12 @@ const server = http.createServer((request,response)=>{
     const {url} = request;
     if(url=="/"){
         response.writeHead(200,{"Content-type":"text/html"})
-        const read = fs.createReadStream("/workspaces/node-js-fifth-sem/Practice/Resume_On_Server/new1.html")
+        const read = fs.createReadStream("./index.html")
         read.pipe(response)
     }
     else if(url=="/newurl"){
     response.writeHead(200,{"Content-type":"text/html"})
-    const read = fs.createReadStream("/workspaces/node-js-fifth-sem/Practice/Resume_On_Server/new.html")
+    const read = fs.createReadStream("./new.html")
     read.pipe(response)
     }
 })
