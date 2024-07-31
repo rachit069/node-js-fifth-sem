@@ -3,3 +3,11 @@ post : payload rqd
 put : complete payload rqd
 patch : payload rqd
 delete : id or payload rqd
+
+
+// Status Codes
+1. 100 - 199 - informational response(sensitive info between client and server)
+2. 200 - 299 - successful responses
+3. 300 - 399 - redirectional responses
+4. 400 - 499 - client error
+5. 500 - 599 - server error
